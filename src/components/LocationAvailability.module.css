@@ -1,0 +1,148 @@
+/*//////////////////////////////////////////*/
+/* location */
+/*//////////////////////////////////////////*/
+
+.title_container 
+{
+    width:600px;
+    height:auto;
+    position:absolute;
+    overflow:hidden;
+    z-index:3;  
+}
+
+.title 
+{
+    margin-bottom: 360px;
+}  
+
+.title_bg
+{
+    position:absolute;
+    width: 500px;
+    height:200px;
+    margin-bottom:300px;
+    z-index:1;
+}
+
+.title_bg::before
+{
+    content: '';
+    position:absolute;
+    width:500px;
+    height:200px;
+    background:#F2F2F2;
+    z-index:-2;
+}
+
+/* about house featurss copy */
+
+.features_container
+{
+    width:700px;
+    height:700px;
+    margin-top:530px;
+    overflow:hidden;
+    z-index:14;
+}
+
+.stats
+{
+    display:flex;
+    width:700px;
+    height:700px;
+}
+
+.col
+{
+    padding:10px;   
+}
+
+.col:last-child
+{
+    flex:1;
+}
+
+.stats_title
+{
+    opacity:1;
+}
+
+.stats_details
+{
+    opacity:1;
+}
+
+.places_group
+{
+    margin-top:30px;
+}
+
+.places_list_item:nth-child(2)
+{
+   padding-top:30px;
+}
+
+.places_list_item
+{
+    padding-top:20px;
+    font-family: 'PT Serif', serif;
+    line-height: normal;
+    font-size: 0.875rem;
+}
+
+.features_bg
+{
+    position:absolute;
+    width:750px;
+    height:750px;
+    margin-top:528px;
+    z-index:1;
+}
+
+.features_bg::before
+{
+    content: '';
+    position:absolute;
+    width:740px;
+    height:450px;
+    background:#F2F2F2;
+    z-index:-2;
+}
+
+.availability_container
+{
+    width:600px;
+    height:auto;
+    position:absolute;
+    overflow:hidden;
+    z-index:3;
+    margin-top:830px;
+}
+
+.availability_bg
+{
+    position:absolute;
+    width: 500px;
+    height:200px;
+    z-index:1;
+}
+
+.availability_bg::before
+{
+    content: '';
+    position:absolute;
+    width:800px;
+    height:200px;
+    margin-top:438px;
+    background:#F2F2F2;
+    z-index:-2;
+}
+
+.availability_list_item
+{
+    padding-top:20px;
+    font-family: 'PT Serif', serif;
+    line-height: normal;
+    font-size: 0.875rem;
+}

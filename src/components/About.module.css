@@ -1,0 +1,11 @@
+/*//////////////////////////////////////////*/
+/* about */
+/*//////////////////////////////////////////*/
+
+.titles {
+    font-family: 'Ultra', serif;
+    font-size:3rem;
+    margin-bottom:300px;
+    padding:7px 20px 7px 12px;
+    z-index:2;
+  }

@@ -1,0 +1,139 @@
+/*//////////////////////////////////////////*/
+/* amenities */
+/*//////////////////////////////////////////*/
+
+.titles {
+  font-family: 'Ultra', serif;
+  font-size:3rem;
+  margin-bottom:300px;
+  padding:7px 20px 7px 12px;
+  z-index:3;
+}
+
+.titles_container {
+  width:350px;
+  position:absolute;
+  overflow:hidden;
+  z-index:2;  
+}
+
+.titles_bg
+{
+  position:absolute;
+  width:350px;
+  height:80px;
+  margin-bottom:300px;
+  z-index:1;
+}
+
+.titles_bg::before
+{
+  content: '';
+  position:absolute;
+  width:350px;
+  height:80px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+.essentials_container
+{
+  overflow:hidden;
+  display: flex;
+  z-index:14;
+}
+
+.essentials_stats
+{
+  width:600px;
+  margin-top:80px;
+}
+
+.essentials_bg
+{
+  position:absolute;
+  width:600px;
+  height:150px;
+  margin-top:-70px;
+  z-index:1;
+}
+
+.essentials_bg::before
+{
+  content: '';
+  position:absolute;
+  width:600px;
+  height:140px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+.kitchen_container
+{
+  margin-top:-20px;
+  overflow:hidden;
+  z-index:14;
+}
+
+.kitchen_stats
+{
+  width:600px;
+}
+
+.kitchen_bg
+{
+  position:absolute;
+  width:600px;
+  height:140px;
+  margin-top:190px;
+  z-index:1;
+}
+
+.kitchen_bg::before
+{
+  content: '';
+  position:absolute;
+  width:600px;
+  height:140px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+
+/* common stuff - shared with each list */
+
+.col
+{
+  padding:10px;
+}
+
+.title
+{
+  font-size:1.125rem;
+}
+
+.card
+{
+  z-index:10;
+  display:flex;
+  flex-wrap: wrap;
+  height:100px;
+  margin-top:10px;
+  margin-left:0px;
+}
+
+.column
+{
+  display:flex;
+  margin:0px 10px 0px 10px;
+}
+
+.icon
+{
+  margin-right:6px;
+}
+
+.detail
+{
+  font-size:0.875rem;
+}

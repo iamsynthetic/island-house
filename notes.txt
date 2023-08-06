@@ -1,0 +1,85 @@
+TO DO 
+---------------------------------
+
+change the scroll bar to be a custom one
+have the house animate to specific part of it for each section
+make sure section number changes on button click so that when you scroll back up or down it goes to the correct section
+make this responsive
+try to figure out how to add global styles with css modules
+
+button disappears if mouse is in hit area while it's animating in. JEEEEZZ!!!!!!
+
+--
+
+Section 3
+
+change headline, body copy to talk about the land, show stats about it
+
+update the intro animations for headline, body, and cta's to be similar to section 1
+
+--
+
+Section 4
+
+change headline, body copy to talk about the dock and boat, show stats about it
+
+update the intro animations for headline, body, and cta's to be similar to section 1
+
+
+Section 5
+
+contact section functionality can stay as is
+
+update the intro animations for headline, body, and cta's to be similar to section 1
+
+
+update the contact me button so that it is functional
+
+update the contact me button so that it has a hover state / animates
+
+change the contact section so that it is functional
+
+add in the projects section, or change it
+
+change menu animation, make more dynamic?
+
+change colours of blue to something else
+
+change the way the first section animates in, make it more interesting
+
+
+
+
+
+
+DONE
+---------------------------------
+
+check scroll position for the two bottom sections
+- ended up removing the smooth scroll for the first two sections
+
+change the intro animation
+    - changed the type of easing for the house
+
+change the animation of the model when the menu comes out
+    - made it not slide so far over
+
+change button
+    1. change hover animation so that on hover white comes in from left, on mouseout, white goes away
+    2. change size of button so it's a bit smaller
+    3. have it click to section 2
+    4. have the mouse follower change on hover like it does for the side menu
+
+change the mouse follower to be themed coloured
+
+animate in differently
+    1. have a white background slide in from left to right, then the headline come in over it same-ish way
+    2. do the same thing for the body copy
+
+change copy to something about the model "you could live here!" whatever, for headline, body and button
+
+when scrolling back to a section no animation should occur.
+
+section 2
+change headline, body copy to talk about the house, show stats about it
+update the intro animations for headline, body, and cta's to be similar to section 1

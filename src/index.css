@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Ultra&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  colors:
+  blue - #8DCBF2
+  burnt - #D9AB23
+  peach - #F29E38
+  brown - #8C501C
+  burgundy - #BF300F
+*/
+
+html
+{
+  font-size:16px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,212,160,1) 100%);
+}
+
+body {
+  margin: 0;
+}
+
+.cursor-hover-circle-fill
+{
+  /* blue */
+  background-color: rgb(141, 203, 242)
+}
+
+.cursor-hover-circle-border
+{
+  /* peach */
+  border-color: rgb(242, 158, 56)
+}
+
+/*//////////////////////////////////////////*/
+/* GLOBAL */
+/*//////////////////////////////////////////*/
+
+/* titles, sub titles copy */
+.g_title
+{
+  font-family: 'Ultra', serif;
+  font-weight: 800;
+  color: black;
+  font-size: 3rem;
+  line-height: 1.375;
+  padding: 7px 20px 7px 12px;
+}
+
+.g_subtitle
+{
+  font-family: 'PT Serif', serif; 
+  line-height: normal;
+  font-size: 1.125rem;
+}
+
+.g_subsubtitle
+{
+  font-family: 'PT Serif', serif;
+  line-height: normal;
+  font-size: 0.875rem;
+  color: #D9AB23;  
+}
+
+.g_bodycopy
+{
+  font-family: 'PT Serif', serif;
+  font-size:1rem;
+  line-height: normal;
+}
+
+
+/*//////////////////////////////////////////*/
+/* MAIN MENU */
+/*//////////////////////////////////////////*/
+
+.button-main-menu-label
+{
+  background-color:#F29E38;
+}
+
+.button-main-menu 
+{
+  background-color:#BF300F;
+  width:50px;
+  height:50px;
+  overflow:hidden;
+  z-index:1;
+}
+
+.main-menu-flyout
+{
+  z-index:0;
+}
+
+/*//////////////////////////////////////////*/
+/* MAIN TITLE */
+/*//////////////////////////////////////////*/
+
+.titles-container {
+  width:260px;
+  position:absolute;
+  overflow:hidden;
+  z-index:3;  
+}
+
+.titles-bg
+{
+  position:absolute;
+  width:260px;
+  height:80px;
+  margin-bottom:300px;
+  z-index:1;
+}
+
+.titles-bg::before
+{
+  content: '';
+  position:absolute;
+  width:260px;
+  height:80px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+/*//////////////////////////////////////////*/
+/* MAIN BODY COPY */
+/*//////////////////////////////////////////*/
+.bodycopy-container
+{
+  width:500px;
+  margin-bottom:150px;
+  position:absolute;
+  overflow:hidden;
+  padding-left:10px;
+  z-index:3;
+}
+
+.bodycopy
+{
+  font-family: 'PT Serif', serif;
+  font-size:1.375rem;
+  line-height: normal;
+  width:300px
+}
+.bodycopy-bg
+{
+  position:absolute;
+  width:350px;
+  height:85px;
+  margin-bottom:135px;
+  z-index:1;
+}
+
+.bodycopy-bg::before
+{
+  content: '';
+  position:absolute;
+  width:350px;
+  height:85px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+/*//////////////////////////////////////////*/
+/* MAIN BUTTON */
+/*//////////////////////////////////////////*/
+
+.button-container 
+{
+  z-index:10;
+}
+
+.button 
+{
+  background-color:#BF300F;
+  position:relative;
+  width:200px;
+  height:60px;
+  padding:0;
+  overflow:hidden;
+  z-index:-3;
+}
+
+.button::before
+{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  margin-left: -400px;
+  margin-top: -42px;
+  background-color: white;
+  z-index:-2;
+}
+
+.button-label
+{
+  color:#F29E38;
+  font-family: 'Ultra', serif;
+  font-size:1.125rem;
+  z-index:1;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////// SECTIONS ////////////////////////////////////////////////////*/ 
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*//////////////////////////////////////////*/
+/* ABOUT */
+/*//////////////////////////////////////////*/
+
+.about-title-container {
+  width:600px;
+  position:absolute;
+  overflow:hidden;
+  z-index:3;  
+}
+
+.about-title-bg
+{
+  position:absolute;
+  width:600;
+  height:80px;
+  margin-bottom:300px;
+  z-index:1;
+}
+
+.about-title-bg::before
+{
+  content: '';
+  position:absolute;
+  width:600px;
+  height:80px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+/* about house featurss copy */
+
+.about .housefeatures-container
+{
+  width:520px;
+  height:80px;
+  margin-top:-140px;
+  overflow:hidden;
+  z-index:14;
+}
+
+.about .housefeatures-container .stats
+{
+  display:flex;
+  width:610px;
+}
+
+.about .housefeatures-container .stats .col
+{
+  padding:10px;
+}
+
+.about .housefeatures-container .stats .col:last-child
+{
+  flex:1;
+}
+
+.about .housefeatures-container .stats .title
+{
+  font-size:1.125rem;
+}
+
+.about .housefeatures-container .stats .title .detail
+{
+  font-size:0.875rem;
+  color:#D9AB23;
+}
+
+.housefeatures-bg
+{
+  position:absolute;
+  width:520px;
+  height:80px;
+  margin-top:-140px;
+  z-index:1;
+}
+
+.housefeatures-bg::before
+{
+  content: '';
+  position:absolute;
+  width:550px;
+  height:80px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+/* about body copy */
+
+.about-bodycopy-container
+{
+  width:650px;
+  height:300px;
+  margin-top:240px;
+  position:absolute;
+  overflow:hidden;
+  padding-left:10px;
+  z-index:3;
+}
+
+.about-bodycopy-container .bodycopy
+{
+  font-size:1.375rem;
+  width:600px;
+}
+
+.about-bodycopy-bg
+{
+  position:absolute;
+  width:650px;
+  height:250px;
+  margin-top:190px;
+  z-index:1;
+}
+
+.about-bodycopy-bg::before
+{
+  content: '';
+  position:absolute;
+  width:650px;
+  height:270px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+
+.about .button-container 
+{
+  z-index:10;
+  position:absolute;
+  margin-top:520px;
+}
+
+
+/*//////////////////////////////////////////*/
+/* ROOMS */
+/*//////////////////////////////////////////*/
+
+.rooms .title-container {
+  width:600px;
+  position:absolute;
+  overflow:hidden;
+  z-index:3;  
+}
+
+.rooms .title-bg
+{
+  position:absolute;
+  width:600;
+  height:80px;
+  margin-bottom:300px;
+  z-index:1;
+}
+
+.rooms .title-bg::before
+{
+  content: '';
+  position:absolute;
+  width:600px;
+  height:80px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+.icon
+{
+  font-size:1.5rem;
+}
+
+/* bedroom */
+
+.rooms .bedroom-container
+{
+  margin-top:215px;
+  overflow:hidden;
+  z-index:14;
+}
+
+.rooms .bedroom-container .stats
+{
+  width:600px;
+}
+
+.rooms .bedroom-container .stats .col
+{
+  padding:10px;
+}
+
+.rooms .bedroom-container .stats .col .title
+{
+  font-size:1.125rem;
+}
+
+.rooms .bedroom-container .stats .col .card
+{
+  z-index:10;
+  display:flex;
+  flex-flow:column;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.rooms .bedroom-container .stats .col .card .subtitle
+{
+  font-size:0.875rem;
+}
+
+.rooms .bedroom-container .stats .col .card .details
+{
+  font-size:0.875rem;
+  flex:1;
+}
+
+.rooms .bedroom-container .stats .icons-container
+{
+  z-index:10;
+  display:flex;
+}
+
+.rooms .bedroom-container .stats .icon
+{
+  margin-right:10px;
+  margin-top:10px;
+}
+
+.rooms .bedroom-bg
+{
+  position:absolute;
+  width:650px;
+  height:155px;
+  margin-top:-65px;
+  z-index:1;
+}
+
+.rooms .bedroom-bg::before
+{
+  content: '';
+  position:absolute;
+  width:650px;
+  height:155px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+/* bathroom */
+
+.rooms .bathroom-container
+{
+  margin-top:-1px;
+  overflow:hidden;
+  z-index:14;
+}
+
+.rooms .bathroom-container .stats
+{
+  width:600px;
+}
+
+.rooms .bathroom-container .stats .col
+{
+  padding:10px;
+}
+
+.rooms .bathroom-container .stats .col .title
+{
+  font-size:1.125rem;
+}
+
+.rooms .bathroom-container .stats .col .card
+{
+  z-index:10;
+  display:flex;
+  flex-flow:column;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.rooms .bathroom-container .stats .col .card .subtitle
+{
+  font-size:0.875rem;
+}
+
+.rooms .bathroom-container .stats .col .card .details
+{
+  font-size:0.875rem;
+}
+
+.rooms .bathroom-container .stats .icons-container
+{
+  z-index:10;
+  display:flex;
+}
+
+.rooms .bathroom-container .stats .icon
+{
+  margin-right:10px;
+  margin-top:10px;
+}
+
+.rooms .bathroom-bg
+{
+  position:absolute;
+  width:650px;
+  height:130px;
+  margin-top:220px;
+  z-index:1;
+}
+
+.rooms .bathroom-bg::before
+{
+  content: '';
+  position:absolute;
+  width:500px;
+  height:130px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+
+/* other */
+
+.rooms .otherroom-container
+{
+  margin-top:-2px;
+  overflow:hidden;
+  z-index:14;
+}
+
+.rooms .otherroom-container .stats
+{
+  width:600px;
+}
+
+.rooms .otherroom-container .stats .col
+{
+  padding:10px;
+}
+
+.rooms .otherroom-container .stats .col .title
+{
+  font-size:1.125rem;
+}
+
+.rooms .otherroom-container .stats .col .card
+{
+  z-index:10;
+  display:flex;
+  height:100px;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.rooms .otherroom-container .stats .col .card .column
+{
+  display:flex;
+  flex:25%;
+}
+
+.rooms .otherroom-container .stats .col .card .column .icon
+{
+  margin-right:6px;
+}
+
+.rooms .otherroom-container .stats .col .card .detail
+{
+  font-size:0.875rem;
+}
+
+.rooms .otherroom-bg
+{
+  position:absolute;
+  width:560px;
+  height:90px;
+  margin-top:440px;
+  z-index:1;
+}
+
+.rooms .otherroom-bg::before
+{
+  content: '';
+  position:absolute;
+  width:560px;
+  height:90px;
+  background:#F2F2F2;
+  z-index:-2;
+}
+
+.rooms .button-container 
+{
+  z-index:10;
+  position:absolute;
+  margin-top:572px;
+}
