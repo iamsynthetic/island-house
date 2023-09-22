@@ -64,7 +64,7 @@ export const Rooms = () => {
                         <div className="row title">BEDROOMS: 1 (sleeps 4)</div>
                         <div className="row card">
                             <div className="row subtitle">1 bedroom</div>
-                            <div className="row details">queen bed & sleep sofa queen bed & sleep sofa queen bed & sleep sofa queen bed & sleep sofa</div>
+                            <div className="row details">queen bed & sleep sofa</div>
                             <div className="icons-container">
                                 <BiBed className='icon'/>
                                 <LiaCouchSolid className='icon'/>
